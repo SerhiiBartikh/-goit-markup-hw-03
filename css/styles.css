@@ -63,7 +63,7 @@ ul{
 }
 
 .header-page{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content:space-between;
     padding: 24px 0 24px 0;
@@ -283,6 +283,8 @@ padding: 120px 0 120px 0;
 }
 .section-team .section-team-card{
     background-color: var(--secondary-text-color);
+    display: block;
+    text-align: center;
 }
 
 .section-team .section-team-title{
@@ -294,6 +296,8 @@ padding: 120px 0 120px 0;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
+    
+
 
 }
 
@@ -303,12 +307,16 @@ padding: 120px 0 120px 0;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em; 
+
+    margin-top: 32px;
 }
 
 .section-team-list .list-about{
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;      
+    letter-spacing: 0.02em; 
+    margin-top: 8px; 
+    padding-bottom: 32px;    
 }
 
 /* PORTFOLIO */
@@ -326,6 +334,11 @@ padding: 120px 0 120px 0;
     text-align: center;
     letter-spacing: 0.04em;
 
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+
+    padding: 12px 24px 12px 24px;
+
    }
  .breadcrumb-button:hover,
  .breadcrumb-button:focus{
@@ -335,6 +348,15 @@ padding: 120px 0 120px 0;
 
    /* portfolio-main */
 
+   .breadcrumb-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+
+   }
+
 
 .portfolio-main-list a{
     cursor:pointer;
@@ -343,7 +365,11 @@ padding: 120px 0 120px 0;
 
 .portfolio-main-list{
     background-color:var(--secondary-text-color);
+    display: flex;
+    flex-wrap: wrap;
+    
    }
+
 
 .portfolio-main-title{
     font-weight: 500;
