@@ -9,9 +9,41 @@
 }
 
 body{
-   background-color: #ffffff; 
-   color:var(--primary-text-color);
-   font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    background-color: #ffffff; 
+    color:var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+}
+p,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+ 
+ }
+ 
+ address{
+    font-style: normal;
+ 
+ }
+ button{
+    cursor:pointer;
+ }
+ 
+
+.container{
+    max-width: 1128px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+   
 }
 
 .link{
@@ -25,7 +57,36 @@ body{
 
 
 /* header */
+/* -----flex---- */
+.header{
 
+}
+
+.header-page{
+    border: 1px solid red;
+    display: flex;
+    justify-content:space-between;
+    padding: 24px 0 24px 0;
+    
+}
+
+.header-navigation{
+    
+    display: flex;
+    align-items: center;
+}
+
+.site-nav{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.auth-nav{
+    margin-left: auto;
+   display: flex;
+   gap: 40px;
+}
 
 
 
@@ -41,6 +102,8 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+    margin-right: 76px;
+
 }
 .logo .color{
     color: var(--title-text-color)
@@ -55,6 +118,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus {
@@ -73,7 +137,9 @@ body{
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;  
+    letter-spacing: 0.02em;
+
+  
 }
 .auth-nav .auth-link:hover,
 .auth-nav .auth-link:focus {
@@ -81,8 +147,21 @@ body{
     }
 
 /* button- business */
+
+.business-container{
+    /* flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items:center */
+    /* display: flex; */
+}
 .business{
-    background: var(--title-text-color)
+    background: var(--title-text-color);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 .business .business-title{
     color: var(--secondary-text-color);
@@ -90,6 +169,8 @@ body{
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-bottom: 48px;
 }
 
 
@@ -104,6 +185,11 @@ body{
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 22px ;
+
+    
 
 
 }
@@ -112,9 +198,22 @@ body{
     background-color: var(--accent_color);
 }
 
-/* section */
+/* ------------section-------------- */
+.section-first-container{
+    /* padding-top: 120px; */
+    
+}
+
 .section-first{
     background-color: var(--secondary-text-color);
+    padding-top: 120px;
+}   
+.work-list{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 24px;
+    min-width: 264px;
+    
 }
 
 /* title h2 */
@@ -131,6 +230,8 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+
 }
 
 .work-list .description{
@@ -141,8 +242,17 @@ body{
 
 
 /* section2 */
+.job-list{
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+    /* padding-bottom: 120px; */
+
+}
+
 .section-job{
-    background-color:var(--secondary-text-color)
+    background-color:var(--secondary-text-color);
+    padding-bottom: 120px;
 }
 
 .section-job .section-title{
@@ -151,10 +261,22 @@ body{
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize
+    text-transform: capitalize;
+
+    margin-top: 114px
 }
 
 /* section team */
+.section-team-container{
+padding: 120px 0 120px 0;
+}
+
+.section-team-list{
+    margin-top: 72px;
+    display: flex;
+    gap: 24px;
+}
+
 .section-team{
     background-color:var(--footer-text-color)
 
@@ -171,6 +293,8 @@ body{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
+
 }
 
 .section-team-list .list-title{
@@ -238,9 +362,15 @@ body{
  
 
 /* footer */
+.foter-container{
+    display: flex;
+   
+    flex-direction: column;
+}
 
 .footer{
-    background: var(--title-text-color)
+    background: var(--title-text-color);
+    padding:100px 0 100px 0;
 }
 .footer-logo{
     font-family: 'Raleway', sans-serif; 
@@ -252,6 +382,7 @@ body{
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .footer .color{
@@ -259,6 +390,7 @@ body{
 }
 
 .footer-description{
+    max-width: 264px;
     color: var(--footer-text-color);
     font-size: 16px;
     line-height: 1.5;
