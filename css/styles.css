@@ -44,7 +44,7 @@ ul{
  
 
 .container{
-    max-width: 1128px;
+    max-width: 1158px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
    
@@ -206,6 +206,7 @@ ul{
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border:none;
 
     
 
@@ -224,7 +225,7 @@ ul{
 
 .section-first{
     background-color: var(--secondary-text-color);
-    padding-top: 120px;
+    padding: 120px 0;
 }   
 .work-list{
     display: flex;
@@ -289,12 +290,16 @@ ul{
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
-    margin-top: 114px
+
 }
 
 /* section team */
 .section-team{
     padding: 120px 0 120px 0;
+}
+
+.section-team-wrapper{
+    padding: 32px 0;
 }
 
 .section-team-list{
@@ -338,7 +343,7 @@ ul{
     line-height: 1.2;
     letter-spacing: 0.02em; 
 
-    padding-top: 32px;
+    
 }
 
 .section-team-list .list-about{
@@ -346,7 +351,7 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em; 
     margin-top: 8px; 
-    padding-bottom: 32px;    
+      
 }
 
 /* PORTFOLIO */
@@ -429,6 +434,7 @@ ul{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    margin-bottom: 8px;
    }
 .portfolio-main-description{
     font-size: 16px;
